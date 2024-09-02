@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4%;
+    background-color: red;
+    color: white;
+}
+
+.navigation ul li{
+    display: inline;
+    margin-right: 30px;
+}
+
+.sci ul li{
+    display: inline;
+    margin-right: 30px;
+}
+
+/* ini bagian hero */
+.hero{
+    background-image: url(assets/img/hero.png);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem 9%;
+}
+
+.hero p{
+    color: red;
+}
+
+.hero h1{
+    font-size: 50px;
+}
+
+.hero button{
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+/* Ini bagian kategori */
+.title{
+    text-align: center;
+}
+
+.kategori{
+    padding: 20px;
+}
+
+.kategoriContent{
+    padding: 2rem 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kategoriContent .card{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.kategoriContent .card button{
+    background-color: red;
+    margin-top: 20px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.koleksi{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5%;
+}
+
+.koleksi .card1{
+    background-image: url(assets/img/banner1.jpg);
+}
+.koleksi .card2{
+    background-image: url(assets/img/banner2.jpg);
+}
+.koleksi .card3{
+    background-image: url(assets/img/banner3.jpg);
+}
+
+.koleksi .card{
+    width: 350px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+.koleksi button{
+    padding: 10px 20px;
+    background-color: pink;
+    border-radius: 30px;
+    border: none;
+    margin-top: 10px;
+}
+
+.koleksi h3{
+    margin: 10px 0;
+}
+
+/* ini untuk styling produk */
+.produk .kategori ul li{
+    display: inline;
+    margin-right: 30px;
+}
+
+.produk button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor:pointer;
+}
+
+.produk button:hover{
+    background-color: pink;
+}
+
+.produk .kategori{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kontenKategori{
+    padding: 2rem 5%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.kontenKategori .card{
+    width: 250px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.kontenKategori .card h1{
+    font-weight: lighter;
+}
+
+.kontenKategori .card i{
+    color: pink;
+}
+
+.kontenKategori .rating{
+    margin: 10px 0;
+}
+
+.kontenKategori h3{
+    font-weight: lighter;
+}
+
+.kontenKategori .card:hover{
+    border: 1px solid pink;
+}
+
+.kontenKategori .card .images,
+.kontenKategori .card .images img{
+    width: 100%;
+    height: 230px;
+}
+
+.kontenKategori .card .teks{
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+.kontenKategori .card:hover img{
+    transform: scale(1.2);
+    transition: .5s;
+}
+ 
+
+.testimonialContent img{
+    border-radius: 50%;
+    border: 5px solid red;
+}
+
+.testimonial{
+    background-color: pink;
+    padding: 5rem 5%;
+}
+
+
+.testimonialContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.produk{
+    margin-top: 50px;
+}
+
+.fashion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.fashion .card{
+    width: 48%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.fashion img{
+    width: 100%;
+}
+
+.fashion .card:hover img{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+/* Bagian blog */
+.blog{
+    margin-top: 60px;
+    padding: 2rem 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.blog .card{
+    width: 350px;
+    border: 1px solid gray;
+}
+
+.blog .card .cardText{
+    padding: 10px;
+}
+
+.blog img{
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 60px;
+    background-color: black;
+    padding: 5rem 5%;
+    color: white;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li{
+    margin-top: 20px;
+    list-style: none;
+}
+
+@media (max-width:480px) {
+    .navigation,
+    .sci{
+        display: none;
+    }
+}
+
+
